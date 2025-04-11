@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMW.com</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      overflow-x: hidden;
+      background-color: #000;
+    }
+
+    /* Navbar styling */
+    .navbar {
+      background: rgba(0, 0, 0, 0.8);
+      position: sticky;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .navbar img {
+      height: 45px;
+    }
+
+    /* Ensure the logo stays left while the nav is pushed to the right */
+    .logo {
+      flex: 1;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+      justify-content: flex-end; /* Align to the right most side */
+      flex: 0; /* Make sure it doesn't take more space than needed */
+    }
+
+    nav a {
+      color: rgb(44, 153, 255);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin: 60px 0 10px;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      text-align: center;
+      font-weight: 400;
+      font-size: 1.3em;
+      margin-bottom: 40px;
+      color: #00aeff;
+    }
+
+    h3 {
+      margin: 50px 30px 20px;
+      font-size: 1.5em;
+      font-weight: 600;
+      color:  #0099ff;
+    }
+
+    .car-img {
+      display: block;
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto 50px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .car-img:hover {
+      transform: scale(1.02);
+    }
+
+    /* Background video with curved edges and better quality */
+    .video-section {
+      position: relative;
+      width: 90%;
+      height: 500px;
+      margin: 0 auto 50px;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-section video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.7;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+      }
+
+      .logo {
+        flex: 1;
+      }
+
+      nav {
+        gap: 15px;
+        justify-content: flex-end; /* Ensures it stays at the right even in mobile view */
+      }
+
+      h1 {
+        font-size: 2.2em;
+        margin-top: 40px;
+      }
+
+      .video-section {
+        height: 300px; /* Adjust for smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar with logo -->
+  <div class="navbar">
+    <div class="logo">
+      <img src="https://pngimg.com/uploads/bmw_logo/bmw_logo_PNG19705.png" alt="BMW Logo">
+    </div>
+    <nav>
+      <a href="https://www.bmw.com" target="_blank">Home</a>
+      <a href="p.html">About</a>
+      <a href="newp.html">Bookings</a>
+    </nav>
+  </div>
+
+  <!-- Page Content -->
+  <h1>BMW</h1>
+  <h2>Welcome to the world where luxury meets thrill</h2>
+
+  <!-- Background Video Section -->
+  <div class="video-section">
+    <video autoplay muted loop>
+      <source src="bmw.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <h3>The M3</h3>
+  <img class="car-img" src="https://www.topgear.com/sites/default/files/2023/01/DSC_6853.jpg" alt="BMW M3">
+
+  <h3>The M4</h3>
+  <img class="car-img" src="https://cdn.motor1.com/images/mgl/G32EVA/s1/manhart-mh4-gtr-ii-basis-bmw-m4-csl.jpg" alt="BMW M4">
+
+  <h3>The All-New M5</h3>
+  <img class="car-img" src="https://th.bing.com/th/id/OIP.cleylMGtESl2sGfdUV6vawHaEK?rs=1&pid=ImgDetMain" alt="BMW M5">
+  <h5> @BMW 2025 T&C Applied</h5>
+</body>
+</html>
